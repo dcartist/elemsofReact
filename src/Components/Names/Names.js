@@ -14,10 +14,6 @@ class Names extends Component {
                 <p>So far there are <span>{names.length}</span> listed languages below</p>
                 <div className="mainDiv">{thenames}</div>
                 
-                {/* <ul>
-                {thenames}
-                </ul> */}
-                
             </div>
         );
     }
