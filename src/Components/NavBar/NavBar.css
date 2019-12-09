@@ -1,6 +1,17 @@
 .navBar {
-    background-color: black;
+    
     color: white;
     list-style-type: none;
+    
+
+}
+.navBar li {
+    display: inline;
+}
+.mainInfo {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 45px;
     
 }
