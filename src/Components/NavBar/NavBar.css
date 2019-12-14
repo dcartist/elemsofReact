@@ -1,17 +1,30 @@
 .navBar {
-    
+    margin: 0;
+    padding: 0;
     color: white;
     list-style-type: none;
-    
+    text-align: left;
+    /* justify-items: center; */
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
 
 }
 .navBar li {
     display: inline;
+    padding: 0 0 0 15px;
+
 }
 .mainInfo {
     background-color: black;
     margin: 0;
     padding: 0;
-    height: 45px;
+    height: 105px;
+   
     
 }
+
+.smallerImage{
+    height: 90px;
+    padding: 5px 25px;
+  }

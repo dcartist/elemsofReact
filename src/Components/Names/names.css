@@ -3,10 +3,13 @@
 
 .mainDiv {
 display: grid;
-grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(4, 1fr);
 font-family: 'Lato', sans-serif;
 font-size: 14px;
 text-align: left;
+justify-items: center;
+/* display: flex; */
+/* align-content: center; */
 }
 .mainDiv ul {
     list-style: none;
@@ -14,10 +17,45 @@ text-align: left;
 .mainDiv li {
     list-style: none;
     padding-bottom: 10px;
+    color: white;
+    margin: 3px 5px;
+    display: flex;
+    /* align-self: center; */
+    /* justify-self: center; */
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+  /* -webkit-animation-name: example;
+  -webkit-animation-duration: 4s; 
+  -webkit-animation-iteration-count: 1;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 1; */
 }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: white;}
+    to {background-color: black;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+    from {background-color: white;}
+    to {background-color: blakc;}
+  }
 
 span {
 font-family: 'Lato', sans-serif;
 font-size: 25px;
 font-weight: 700;
+}
+.namesBody{
+    margin: 0;
+    text-align: center;
+    
+    /* align-items: center; */
 }
