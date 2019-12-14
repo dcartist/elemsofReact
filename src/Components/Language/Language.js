@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import names from '../../data/compNames.json'
+import './Language.css'
 
 class Language extends Component {
-    // goHomeViaHistory = () => {
-    //     this.props.history.push("/")
-    //     // not a hard direct
-    //   }
+    goHomeViaHistory = () => {
+        this.props.history.push("/")
+        // not a hard direct
+      }
     render() {
         let information = names[this.props.match.params.language]
         return (    
@@ -16,7 +17,7 @@ class Language extends Component {
    </article>
    
 
-                {/* <button onClick={this.goHomeViaHistory}> Go home via history</button> */}
+                <button onClick={this.goHomeViaHistory}> GoTo = home</button>
             </div>
         );
     }

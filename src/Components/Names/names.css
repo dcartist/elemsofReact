@@ -28,12 +28,17 @@ justify-items: center;
     height: 50px;
     text-align: center;
     background-color: black;
+    
   /* -webkit-animation-name: example;
   -webkit-animation-duration: 4s; 
   -webkit-animation-iteration-count: 1;
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: 1; */
+}
+.mainDiv  a{
+  color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* Safari 4.0 - 8.0 */

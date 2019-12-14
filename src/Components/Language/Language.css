@@ -1,0 +1,15 @@
+article {
+width: 75%;
+text-align: justify;
+margin: auto;
+/* display: flex;
+justify-content: center; */
+}
+
+button {
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    padding: 25px;
+
+}
