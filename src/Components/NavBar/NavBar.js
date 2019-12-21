@@ -9,7 +9,8 @@ class NavBar extends Component {
         return (
             <div className="mainInfo" >
                 <ul className="navBar">
-                <img src={Logo} className="smallerImage" alt="elements of logo"/>
+                <Link to="/"> <img src={Logo} className="smallerImage" alt="elements of logo"/></Link>
+               
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
                 </ul>

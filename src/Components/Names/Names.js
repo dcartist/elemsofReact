@@ -4,7 +4,18 @@ import names from '../../data/compNames.json'
 import './names.css'
 import { Link} from "react-router-dom";
 class Names extends Component {
-   
+    constructor(props){
+        super(props)
+        this.state = {
+            buttonChanged: null,
+        }
+    }
+    notAvailable= (evt) => {
+        evt.preventDefault();
+        
+
+
+    }
     render() {
         
         let thenames = names.map( (info, language) => 
