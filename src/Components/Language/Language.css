@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow+Condensed:400,400i,500,500i,600,700,700i,800,800i,900|Open+Sans+Condensed:300,700|Open+Sans:400,600,700,700i,800|Roboto+Mono:300,400,400i,500,500i,700,700i&display=swap');
 article {
 width: 75%;
 text-align: justify;
 margin: auto;
+/* font-family: 'Abril Fatface', cursive; */
 /* display: flex;
 justify-content: center; */
+font-family: 'Open Sans', sans-serif;
+white-space: pre-line;
+font-size: 14px;
 }
 
 button {
@@ -11,5 +16,18 @@ button {
     color: white;
     margin-top: 15px;
     padding: 25px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
 
 }
+h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif; 
+*/

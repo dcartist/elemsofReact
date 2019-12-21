@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CountUp from 'react-countup';
 import names from '../../data/compNames.json'
 import './names.css'
 import { Link} from "react-router-dom";
@@ -18,7 +19,7 @@ class Names extends Component {
         )
         return (
             <div className="namesBody">
-                <p>So far there are <span>{names.length}</span> listed languages below</p>
+                <p>So far there are <br/><span><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p>
                 <div className="mainDiv">{thenames}</div>
                 
             </div>

@@ -10,8 +10,8 @@ class Home extends Component {
          <p>The elements of ...</p> */}
          {/* <Name ></Name>  */}
 
-         <p>The elements of ...</p>
-       <Name ></Name>
+         <p>The elements of Programming Language</p>
+       <Name></Name>
   
         </header>
               
