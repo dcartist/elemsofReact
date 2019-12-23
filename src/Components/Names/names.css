@@ -16,7 +16,7 @@ margin-top: 0;
     list-style: none;
 }
 .toTheLeft{
-  text-align: left;
+  text-align: center;
 }
 .mainDiv li {
     list-style: none;
@@ -33,7 +33,10 @@ margin-top: 0;
     text-align: center;
     background-color: black;
 }
-    
+.greyedOut div{
+  background-color: rgb(48, 48, 48);
+  display: inline-block; 
+}
 .greyedOut li{
     list-style: none;
     padding-bottom: 10px;
@@ -72,7 +75,7 @@ margin-top: 0;
   /* Standard syntax */
   @keyframes example {
     from {background-color: white;}
-    to {background-color: blakc;}
+    to {background-color: black;}
   }
 
 .largeText {
