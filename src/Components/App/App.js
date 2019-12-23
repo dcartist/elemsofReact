@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 // import logo from './logo.svg';
 import './App.css';
-import Name from '../Names/Names'
+// import Name from '../Names/Names'
 import About from '../About/About.js'
 import NavBar from '../NavBar/NavBar'
 import Language from '../Language/Language'
-import {Route, Link, Switch, Redirect} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
+// import {Route, Link, Switch, Redirect} from "react-router-dom";
 import Home from '../Home/Home'
 
 class App extends Component {
@@ -18,7 +19,7 @@ constructor(props){
   
 }
  setLanguage(language) {
-  this.serState({ language: language})
+  this.setState({ language: language})
 }
   render(){
     return (

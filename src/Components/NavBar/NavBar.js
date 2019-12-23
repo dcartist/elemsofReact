@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './NavBar.css'
-import Name from '../Names/Names'
-import About from '../About/About.js'
+// import Name from '../Names/Names'
+// import About from '../About/About.js'
 import Logo from '../../Images/elemof.png'
 import { Link} from "react-router-dom";
 class NavBar extends Component {
