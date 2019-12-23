@@ -6,6 +6,9 @@ import About from '../About/About.js'
 import NavBar from '../NavBar/NavBar'
 import Language from '../Language/Language'
 import {Route, Switch} from "react-router-dom";
+import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 // import {Route, Link, Switch, Redirect} from "react-router-dom";
 import Home from '../Home/Home'
 

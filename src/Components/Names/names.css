@@ -6,7 +6,7 @@ display: grid;
 grid-template-columns: repeat(4, 1fr);
 font-family: 'Lato', sans-serif;
 font-size: 14px;
-text-align: left;
+/* text-align: left; */
 justify-items: center;
 margin-top: 0;
 /* display: flex; */
@@ -14,6 +14,9 @@ margin-top: 0;
 }
 .mainDiv ul {
     list-style: none;
+}
+.toTheLeft{
+  text-align: left;
 }
 .mainDiv li {
     list-style: none;
@@ -37,6 +40,8 @@ margin-top: 0;
     color: white;
     margin: 3px 5px;
     display: flex;
+    display: inline-block; 
+    padding-top: 10px;
     /* align-self: center; */
     /* justify-self: center; */
     justify-content: center;
@@ -85,6 +90,7 @@ font-family: 'Barlow Condensed', sans-serif;
 
 .smallText {
   font-size: 10px;
+  display: block;
 }
 
 
