@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Name from '../Names/Names'
+import './Home.css'
 class Home extends Component {
     render() {
         return (
@@ -9,8 +10,8 @@ class Home extends Component {
 {/*      
          <p>The elements of ...</p> */}
          {/* <Name ></Name>  */}
-
-         <p>The elements of Programming Language</p>
+         <h2>The elements of Programming Language</h2>
+         <hr width="40%"></hr>
        <Name></Name>
   
         </header>

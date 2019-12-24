@@ -43,6 +43,7 @@ class Names extends Component {
           .slice(0, e.target.value.length)
           .join("")
           .toLowerCase()
+          
 )
         this.setState({programNames: newNames})
      
@@ -54,7 +55,8 @@ class Names extends Component {
             <div className="namesBody">
                 
                 {/* <button onClick={this.notAvailable}> This is a button test</button> */}
-                <p>So far there are <br/><span><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p> 
+                <p class="lessSpace">So far there are <br/><span className="largeText"><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p> 
+                <p className="smallText"> *This list is not the full complete listing</p>
                 <div className="toTheLeft">
                 <form>
   <TextField id="standard-basic" label="Search for a Language"  value={this.state.value} onChange={this.searchField} />

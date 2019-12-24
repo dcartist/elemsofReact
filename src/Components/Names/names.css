@@ -23,9 +23,10 @@ margin-top: 0;
 }
 .mainDiv li {
     list-style: none;
-    padding-bottom: 10px;
+    padding: 0 5px;
+    /* padding-bottom: 0px; */
     color: white;
-    margin: 3px 5px;
+    margin: 8px 5px;
     display: flex;
     /* align-self: center; */
     /* justify-self: center; */
@@ -34,7 +35,10 @@ margin-top: 0;
     width: 200px;
     height: 50px;
     text-align: center;
-    background-color: black;
+    /* background-color: black; */
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 3px -14px rgba(0,0,0,0.06); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 0px 3px -14px rgba(0,0,0,0.06);
+background: #060E4A;
 }
 .greyedOut div{
   background-color: rgb(48, 48, 48);
@@ -99,6 +103,9 @@ font-family: 'Barlow Condensed', sans-serif;
   display: block;
 }
 
+.lessSpace {
+  line-height: .95;
+}
 
 /* 
 font-family: 'Abril Fatface', cursive;
