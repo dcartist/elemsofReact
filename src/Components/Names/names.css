@@ -16,7 +16,10 @@ margin-top: 0;
     list-style: none;
 }
 .toTheLeft{
+  margin-top:0;
+  padding-top: 0;
   text-align: center;
+  padding-bottom: 25px;
 }
 .mainDiv li {
     list-style: none;

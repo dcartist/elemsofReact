@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import {InputText} from 'primereact/inputtext';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import CountUp from 'react-countup';
 import NameButton from '../NameButtons/NameButton'
@@ -56,11 +56,9 @@ class Names extends Component {
                 {/* <button onClick={this.notAvailable}> This is a button test</button> */}
                 <p>So far there are <br/><span><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p> 
                 <div className="toTheLeft">
-                    <p>
-                    <form>
+                <form>
   <TextField id="standard-basic" label="Search for a Language"  value={this.state.value} onChange={this.searchField} />
 </form>
-                    </p>
               
                 {/* <InputText id="in" value={this.state.value} onChange={(e) => this.setState({value: e.target.value})} /> */}
                 </div>
@@ -69,11 +67,11 @@ class Names extends Component {
                         
             // console.log(info.summary)
             if (info.summary == "No summary available"){
-                return <NameButtonDis language={language} info={info} name={info.name.replace("(programming language)", "").replace("programming language", "").replace("Programming Language", "").replace("(language)","").replace("language","").replace("(computer programming)","")}></NameButtonDis> 
+                return <NameButtonDis key={info.id}language={info.id} info={info} name={info.name.replace("(programming language)", "").replace("programming language", "").replace("Programming Language", "").replace("(language)","").replace("language","").replace("(computer programming)","")}></NameButtonDis> 
 
             } else {
 
-                return  <NameButton language={language} info={info} name={info.name.replace("(programming language)", "").replace("programming language", "").replace("Programming Language", "").replace("(language)","").replace("language","").replace("(computer programming)","")}></NameButton> 
+                return  <NameButton key={info.id} language={info.id} info={info} name={info.name.replace("(programming language)", "").replace("programming language", "").replace("Programming Language", "").replace("(language)","").replace("language","").replace("(computer programming)","")}></NameButton> 
 
             }
             // End of conditional
