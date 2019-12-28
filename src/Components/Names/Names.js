@@ -79,7 +79,6 @@ class Names extends Component {
             // End of conditional
         })}              
             </div>
-
             </div>
         );
     }

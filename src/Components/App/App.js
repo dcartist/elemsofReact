@@ -5,6 +5,7 @@ import './App.css';
 import About from '../About/About.js'
 import NavBar from '../NavBar/NavBar'
 import Language from '../Language/Language'
+import Trial from '../Trial/Trial'
 import {Route, Switch} from "react-router-dom";
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
@@ -33,6 +34,7 @@ constructor(props){
   <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/about" exact component={About}/>
+        <Route path="/trial" component={Trial}/>
           <Route path="/language/:language" render={(props)=> <Language setLanguage={this.setLanguage} {...props} {...this.state} />} />
           </Switch>
       </div>
