@@ -37,19 +37,31 @@ class Names extends Component {
         e.preventDefault();
         this.setState({value: e.target.value})
         console.log(this.state.value)
-        let newNames = names.filter(item => e.target.value.toLowerCase() ===
-        item.name
-          .split("")
-          .slice(0, e.target.value.length)
-          .join("")
-          .toLowerCase()
-          
-)
-        this.setState({programNames: newNames})
+        //old way of doing it via filter
+//         let newNames = names.filter(item => e.target.value.toLowerCase() ===
+//         item.name
+//           .split("")
+//           .slice(0, e.target.value.length)
+//           .join("")
+//           .toLowerCase()
+// )
+
+//filter via includes
+let trueArray = []
+let arrayTest = names.map(item => {
+    let targetLowered = e.target.value.toLowerCase()
+    let changedName = item.name.toLowerCase()
+    let  thisTest = changedName.includes(targetLowered)
+    if (thisTest) {   
+        trueArray.push(item)
+    } 
+
+    this.setState({programNames: trueArray})
+})
      
     }
     render() {
-      
+        console.log(this.state.programNames)
        
         return (
             <div className="namesBody">
