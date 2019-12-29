@@ -100,12 +100,14 @@ let arrayTest = names.map(item => {
     render() {
         console.log(this.state.programNames)
         console.log(this.state.strueArray)
+
         return (
              <div className="namesBody">
                 
                 {/* <button onClick={this.notAvailable}> This is a button test</button> */}
                 {/* <p class="lessSpace">So far there are <br/><span className="largeText"><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p> 
                 <p className="smallText"> *This list is not the full complete listing</p> */}
+    {/* <p> Actual searched items {this.state.programNames.length}</p> */}
                 <div className="toTheLeft">
                 <form>
   <TextField id="standard-basic" label="Search for a Language"  value={this.state.value} onChange={this.searchField} />
