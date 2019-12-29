@@ -13,6 +13,7 @@ class Trial extends Component {
             buttonChanged: true,
             value: "",
             programs: null,
+            strueArray:[],
             programNames: names
         }
     }
@@ -69,12 +70,13 @@ let arrayTest = names.map(item => {
     if (thisTest) {
         counterTrue++
         trueArray.push(item)
+        this.state.strueArray.push(item)
     } else {
         counter++
     }
 
     // console.log(thisTest)
-    console.log(trueArray)
+    // console.log(trueArray)
     // console.log(`True: ${counterTrue} False: ${counter}`)
     this.setState({programNames: trueArray})
 })
@@ -92,10 +94,12 @@ let arrayTest = names.map(item => {
         // this.setState({programNames: trueArray})
         // console.log(this.state.programNames.search(regEx))
     }
- 
+
 
 
     render() {
+        console.log(this.state.programNames)
+        console.log(this.state.strueArray)
         return (
              <div className="namesBody">
                 
