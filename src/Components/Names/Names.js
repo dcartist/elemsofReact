@@ -21,7 +21,7 @@ class Names extends Component {
             programs: null,
             programNames: names,
             alphabet: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
-            "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+            "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "clear"]
         }
     }
     notAvailable= (evt) => {
@@ -37,14 +37,19 @@ class Names extends Component {
 letters = (e) =>{
     e.preventDefault();
     console.log(e.target.innerHTML)
-    let newNames = names.filter(item => e.target.innerHTML.toLowerCase() ===
-            item.name
-              .split("")
-              .slice(0, e.target.innerHTML.length)
-              .join("")
-              .toLowerCase()
-    )
-    this.setState({programNames: newNames})
+    if (e.target.innerHTML === "clear"){
+        this.setState({programNames: names})
+    } else {
+        let newNames = names.filter(item => e.target.innerHTML.toLowerCase() ===
+        item.name
+          .split("")
+          .slice(0, e.target.innerHTML.length)
+          .join("")
+          .toLowerCase()
+)
+this.setState({programNames: newNames})
+    }
+   
 }
     searchField = (e) => {
         e.preventDefault();
@@ -79,20 +84,33 @@ let arrayTest = names.map(item => {
        
         return (
             <div className="namesBody">
-                <p>
-                {this.state.alphabet.map((info, index) => {
-                    return <span><Link onClick={this.letters}>{info}</Link></span>
-                }) }</p>
+               
                 {/* <button onClick={this.notAvailable}> This is a button test</button> */}
-                <p class="lessSpace">So far there are <br/><span className="largeText"><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p> 
+                <p className="lessSpace">So far there are <br/><span className="largeText"><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p> 
                 <p className="smallText"> *This list is not the full complete listing</p>
                 <div className="toTheLeft">
+                
+             
+
+
                 <form>
   <TextField id="standard-basic" label="Search for a Language"  value={this.state.value} onChange={this.searchField} />
 </form>
               
+<p className="alphaSearch">
+                {this.state.alphabet.map((info, index) => {
+                    if (info === "clear"){
+                        return <span className="clearedName" key={index}><Link to="#" onClick={this.letters}><button>{info}</button></Link></span>
+                    }
+                    else {
+                        return <span className="alphabet" key={index}><Link to="#" onClick={this.letters}>{info}</Link></span>
+                    }
+                }) }</p>
+
+
                 {/* <InputText id="in" value={this.state.value} onChange={(e) => this.setState({value: e.target.value})} /> */}
                 </div>
+               
                 <div className="mainDiv">
                     {this.state.programNames.map( (info, language) => {
                         
