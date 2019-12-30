@@ -10,7 +10,7 @@ import names from '../../data/compNames.json'
 // import 'primereact/resources/primereact.min.css';
 // import 'primeicons/primeicons.css';
 import './names.css'
-// import { Link} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 class Names extends Component {
     constructor(props){
@@ -19,7 +19,9 @@ class Names extends Component {
             buttonChanged: true,
             value: "",
             programs: null,
-            programNames: names
+            programNames: names,
+            alphabet: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+            "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
         }
     }
     notAvailable= (evt) => {
@@ -32,7 +34,18 @@ class Names extends Component {
         }
 
     }
-
+letters = (e) =>{
+    e.preventDefault();
+    console.log(e.target.innerHTML)
+    let newNames = names.filter(item => e.target.innerHTML.toLowerCase() ===
+            item.name
+              .split("")
+              .slice(0, e.target.innerHTML.length)
+              .join("")
+              .toLowerCase()
+    )
+    this.setState({programNames: newNames})
+}
     searchField = (e) => {
         e.preventDefault();
         this.setState({value: e.target.value})
@@ -50,7 +63,7 @@ class Names extends Component {
 let trueArray = []
 let arrayTest = names.map(item => {
     let targetLowered = e.target.value.toLowerCase()
-    let changedName = item.name.toLowerCase()
+    let changedName = item.name.toLowerCase().replace("(programming language)", "").replace("programming language", "").replace("Programming Language", "").replace("(language)","").replace("language","").replace("(computer programming)","")
     let  thisTest = changedName.includes(targetLowered)
     if (thisTest) {   
         trueArray.push(item)
@@ -62,10 +75,14 @@ let arrayTest = names.map(item => {
     }
     render() {
         console.log(this.state.programNames)
+
        
         return (
             <div className="namesBody">
-                
+                <p>
+                {this.state.alphabet.map((info, index) => {
+                    return <span><Link onClick={this.letters}>{info}</Link></span>
+                }) }</p>
                 {/* <button onClick={this.notAvailable}> This is a button test</button> */}
                 <p class="lessSpace">So far there are <br/><span className="largeText"><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p> 
                 <p className="smallText"> *This list is not the full complete listing</p>
