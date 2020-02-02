@@ -18,6 +18,8 @@
 .navBar a {
     color: white;
     text-decoration: none;
+    font-size: 19px;
+    letter-spacing: 3px;
 
 }
 

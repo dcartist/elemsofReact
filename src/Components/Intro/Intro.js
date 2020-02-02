@@ -21,6 +21,7 @@ class Intro extends Component {
         width="500px"
       >
         <TitleBar title="Welcome to Elements of " controls/>
+        <h1>This is a test</h1>
         <Text color={this.props.theme === 'dark' ? 'white' : '#333'}>WELCOME TO ELEMENTS OF</Text>
       </Window>
         );
