@@ -16,7 +16,7 @@ import Home from '../Home/Home'
 import Intro from "../Intro/Intro";
 
 class App extends Component {
-constructor(props){
+constructor(props){ //This is a comment
   super(props)
   this.state = {
     language: null
