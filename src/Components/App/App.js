@@ -14,6 +14,7 @@ import 'primeicons/primeicons.css';
 // import {Route, Link, Switch, Redirect} from "react-router-dom";
 import Home from '../Home/Home'
 import Intro from "../Intro/Intro";
+import Proposal from "../Proposal/Proposal.js"
 
 class App extends Component {
 constructor(props){ //This is a comment
@@ -38,6 +39,7 @@ constructor(props){ //This is a comment
         <Route path="/about" exact component={About}/>
         <Route path="/trial" component={Trial}/>
         <Route path="/intro" component={Intro}/>
+        <Route path="/proposal" component={Proposal}/>
           <Route path="/language/:language" render={(props)=> <Language setLanguage={this.setLanguage} {...props} {...this.state} />} />
           </Switch>
       </div>
