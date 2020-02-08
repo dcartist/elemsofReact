@@ -4,7 +4,8 @@ class Proposal extends Component {
     render() {
         return (
             <div>
-                Proposal piece
+                Proposal piece 1
+                
             </div>
         );
     }
