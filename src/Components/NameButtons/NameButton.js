@@ -1,4 +1,4 @@
-import React, { Component } from '../../../node_modules/@types/react';
+import React, { Component } from 'react';
 import { Link} from "../../../node_modules/react-router-dom";
 // import '../Names/names.css'
 class NameButton extends Component {

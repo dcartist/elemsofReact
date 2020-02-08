@@ -1,5 +1,5 @@
-import React, { Component } from '../../../node_modules/@types/react';
-import names from '../../data/compNames.json.js.js'
+import React, { Component } from 'react';
+import names from '../../data/compNames.json'
 import './Language.css'
 
 class Language extends Component {

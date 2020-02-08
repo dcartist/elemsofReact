@@ -1,4 +1,4 @@
-import React, { Component } from "../../../node_modules/@types/react";
+import React, { Component } from "react";
 // import logo from './logo.svg';
 import './App.css';
 // import Name from '../Names/Names'
@@ -7,10 +7,10 @@ import NavBar from '../NavBar/NavBar'
 // import Intro from '../Intro/Intro'
 import Language from '../Language/Language'
 import Trial from '../Trial/Trial'
-import {Route, Switch} from "../../../node_modules/react-router-dom";
-import './node_modules/primereact/resources/themes/nova-light/theme.css';
-import './node_modules/primereact/resources/primereact.min.css';
-import './node_modules/primeicons/primeicons.css';
+import {Route, Switch} from "react-router-dom";
+import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 // import {Route, Link, Switch, Redirect} from "react-router-dom";
 import Home from '../Home/Home'
 import Intro from "../Intro/Intro";

@@ -1,4 +1,4 @@
-import React, { Component } from '../../../node_modules/@types/react';
+import React, { Component } from 'react';
 import Name from '../Names/Names'
 import './Home.css'
 class Home extends Component {

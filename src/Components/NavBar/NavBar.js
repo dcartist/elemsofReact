@@ -1,4 +1,4 @@
-import React, { Component } from '../../../node_modules/@types/react';
+import React, { Component } from 'react';
 import './NavBar.css'
 // import Name from '../Names/Names'
 // import About from '../About/About.js'
