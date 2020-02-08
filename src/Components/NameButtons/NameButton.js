@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Link} from "react-router-dom";
+import React, { Component } from '../../../node_modules/@types/react';
+import { Link} from "../../../node_modules/react-router-dom";
 // import '../Names/names.css'
 class NameButton extends Component {
     constructor(props){

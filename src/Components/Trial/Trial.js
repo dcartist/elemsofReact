@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import TextField from '@material-ui/core/TextField';
-import CountUp from 'react-countup';
+import React, { Component } from '../../../node_modules/@types/react';
+import TextField from '../../../node_modules/@material-ui/core/TextField';
+import CountUp from '../../../node_modules/react-countup';
 import NameButton from '../NameButtons/NameButton'
 import NameButtonDis from '../NameButtons/NameButtonDis'
-import names from '../../data/compNames.json'
+import names from '../../data/compNames.json.js.js'
 import '../Names/names.css'
 
 class Trial extends Component {

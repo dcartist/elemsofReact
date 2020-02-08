@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from '../../../node_modules/@types/react';
 // import {InputText} from 'primereact/inputtext';
 // import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import CountUp from 'react-countup';
+import TextField from '../../../node_modules/@material-ui/core/TextField';
+import CountUp from '../../../node_modules/react-countup';
 import NameButton from '../NameButtons/NameButton'
 import NameButtonDis from '../NameButtons/NameButtonDis'
-import names from '../../data/compNames.json'
+import names from '../../data/compNames.json.js.js'
 // import 'primereact/resources/themes/nova-light/theme.css';
 // import 'primereact/resources/primereact.min.css';
 // import 'primeicons/primeicons.css';
 import './names.css'
-import { Link} from "react-router-dom";
+import { Link} from "../../../node_modules/react-router-dom";
 
 class Names extends Component {
     constructor(props){

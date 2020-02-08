@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "../../../node_modules/@types/react";
 import Paula from "../../Images/paula.jpg";
 import "./About.css";
 class About extends Component {
