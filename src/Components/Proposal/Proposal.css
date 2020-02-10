@@ -3,13 +3,18 @@
 .mainBox{
     /* Add the following properties to the selector to which the effect has to be applied */
 
-	/* Chrome, Safari */
+    /* Chrome, Safari */
+    margin: auto;
     width: 90%;
     /*	background: #C90205;*/
-    -webkit-box-shadow: 5px 5px 15px #000000;
+    /* -webkit-box-shadow: 5px 5px 15px #000000; */
     /* Standard syntax */
-    box-shadow: 5px 5px 15px #000000;
+    /* box-shadow: 5px 5px 15px #000000; */
 	padding: 15px;
+}
+
+.mainBox p {
+    text-align: justify;
 }
 
 .textShadow {
@@ -25,9 +30,56 @@
     background-clip: text;
 }
 
+.Images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Images img {
+    margin: 0;
+    max-width: 500px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+h2{
+    font-size: 50px;
+    text-align: left;
+    letter-spacing: -4px;
+    border-bottom: 3px solid black ;
+    padding-bottom: 15px;
+
+}
+
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 60px;
+    text-align: left;
+    /* letter-spacing: 114px; */
+    border-bottom: 3px solid black ;
+    padding-bottom: 15px;
+
+}
 
 
 
 
 
+/* 
+h1{
+    font-size: 50px;
+    text-align: left;
+    letter-spacing: -4px;
+    border-bottom: 3px solid black ;
+    padding-bottom: 15px;
 
+} */
+
+.AppDisplay{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.ImageResized {
+    max-height: 500px;
+    max-width: 100%;
+    border: 1px solid black;
+}
