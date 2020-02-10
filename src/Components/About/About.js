@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import Paula from "../../Images/paula.jpg";
+import Nadir from '../../Images/IMG_2584.jpeg'
 import "./About.css";
 class About extends Component {
   render() {
@@ -58,11 +59,12 @@ class About extends Component {
         </section>
         <section>
           <div>
-            <h1 className="talking">Talking Heads & Geniuses </h1>
+            <h3 className="talking">Talking Heads & Geniuses </h3>
+            <img className="iconresized" src={Nadir} />
           </div>
           {/* <div> */}
           <div className="rightsidetext2">
-            <p>
+            <p className="paddedTop">
              <b>Nadir Abdulhaqq</b>
             </p>
             <p>Hailing from California, Nadir is a multi-talented computer science genius with more than 20 years of experience in the technology field. Filled with amazingness and knowledge, Nadir provides substantial information from computer languages, technology to the people themselves.
