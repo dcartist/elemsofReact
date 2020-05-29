@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import Paula from "../../Images/paula.jpg";
 import Nadir from "../../Images/nadir.jpeg";
@@ -6,7 +7,7 @@ class About extends Component {
   render() {
     console.log("This is more than just about");
     return (
-      <div>
+      <div className="About">
         <div className="Fulldisplay">
           <h1>The rosettta stone of programming languages</h1>
         </div>
@@ -16,7 +17,6 @@ class About extends Component {
           programming languages
         </p> */}
         <h2>WHAT & WHY?</h2>
-
         <section1>
           <div>
             {/* <img className="iconresized" src={Paula} /> */}
@@ -39,7 +39,6 @@ class About extends Component {
           </div>
         </section1>
         
-
         {/* <h2>ABOUT</h2> */}
         <h2>WHO?</h2>
         <section>
@@ -60,17 +59,14 @@ class About extends Component {
             </p>
           </div>
         </section>
-        <div>
-            <h1>Talking Heads & Geniuses </h1>
-          </div>
         <section>
-         
-        <div>
+          <div>
+            <h3 className="talking">Talking Heads & Geniuses </h3>
             <img className="iconresized" src={Nadir} />
           </div>
           {/* <div> */}
           <div className="rightsidetext2">
-            <p>
+            <p className="paddedTop">
              <b>Nadir Abdulhaqq</b>
             </p>
             <p>Hailing from California, Nadir is a multi-talented computer science genius with more than 20 years of experience in the technology field. Filled with amazingness and knowledge, Nadir provides substantial information from computer languages, technology to the people themselves.
@@ -78,7 +74,6 @@ class About extends Component {
           </div>
         </section>
         <h2>Big Thank you to...</h2>
-
 <section1>
   <div>
     {/* <img className="iconresized" src={Paula} /> */}
@@ -98,10 +93,8 @@ class About extends Component {
   </article>
   </div>
 </section1>
-
       </div>
     );
   }
 }
-
 export default About;

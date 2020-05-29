@@ -3,7 +3,7 @@ import './NavBar.css'
 // import Name from '../Names/Names'
 // import About from '../About/About.js'
 import Logo from '../../Images/elemof.png'
-import { Link} from "react-router-dom";
+import { Link} from "../../../node_modules/react-router-dom";
 class NavBar extends Component {
     render() {
         return (

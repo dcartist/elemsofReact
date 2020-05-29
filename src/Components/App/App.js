@@ -17,9 +17,10 @@ import Intro from "../Intro/Intro";
 import ProgramListing from '../Home/ProgramHome'
 import { AnimatedSwitch } from 'react-router-transition';
 
+import Proposal from "../Proposal/Proposal.js"
 
 class App extends Component {
-constructor(props){
+constructor(props){ //This is a comment
   super(props)
   this.state = {
     language: null
@@ -48,6 +49,7 @@ constructor(props){
         <Route path="/listing" component={ProgramListing}/>
         <Route path="/trial" component={Trial}/>
         <Route path="/intro" component={Intro}/>
+        <Route path="/proposal" component={Proposal}/>
           <Route path="/language/:language" render={(props)=> <Language setLanguage={this.setLanguage} {...props} {...this.state} />} />
           </AnimatedSwitch>
           </Switch>

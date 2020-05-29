@@ -7,7 +7,7 @@ import NameButton from '../NameButtons/NameButton'
 import NameButtonDis from '../NameButtons/NameButtonDisabled'
 import names from '../../data/compNames.json'
 import './names.css'
-import { Link} from "react-router-dom";
+import { Link} from "../../../node_modules/react-router-dom";
 
 class Names extends Component {
     constructor(props){
