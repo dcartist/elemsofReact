@@ -21,15 +21,15 @@ class Language extends Component {
     render() {
         // let information = names[this.props.match.params.language]
         let information = names.filter(item => item.id == this.props.match.params.language)
-        console.log(information)
+        console.log(information[0].summary.replace("\n", "\n\n"))
         return (    
             <div>
     <h1>{information[0].name}</h1>
    <article>
-   {information[0].summary}
+   {information[0].summary.replace("\n", "\n\n")}
    </article>
    
-            <Link to="/listing"><button> GoTo = home</button></Link>
+            <Link to="/"><button> GoTo = home</button></Link>
                 {/* <button onClick={this.goHomeViaHistory}> GoTo = home</button> */}
             </div>
         );
