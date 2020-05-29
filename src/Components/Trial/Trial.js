@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import CountUp from 'react-countup';
 import NameButton from '../NameButtons/NameButton'
-import NameButtonDis from '../NameButtons/NameButtonDis'
+import NameButtonDis from '../NameButtons/NameButtonDisabled'
 import names from '../../data/compNames.json'
 import '../Names/names.css'
 

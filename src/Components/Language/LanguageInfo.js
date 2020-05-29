@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import names from '../../data/compNames.json'
 import './Language.css'
 
@@ -28,8 +29,8 @@ class Language extends Component {
    {information[0].summary}
    </article>
    
-
-                <button onClick={this.goHomeViaHistory}> GoTo = home</button>
+            <Link to="/listing"><button> GoTo = home</button></Link>
+                {/* <button onClick={this.goHomeViaHistory}> GoTo = home</button> */}
             </div>
         );
     }

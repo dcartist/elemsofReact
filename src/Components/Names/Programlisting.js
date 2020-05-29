@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import {InputText} from 'primereact/inputtext';
-// import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import CountUp from 'react-countup';
 import NameButton from '../NameButtons/NameButton'
@@ -83,7 +81,7 @@ let arrayTest = names.map(item => {
             <div className="namesBody">
                
                 {/* <button onClick={this.notAvailable}> This is a button test</button> */}
-                <p className="lessSpace">So far there are <br/><span className="largeText"><CountUp end={names.length} duration={3.75}/></span>  <br/>listed languages below</p> 
+                <p className="lessSpace">So far there are <br/>{names.length}listed languages below</p> 
                 <p className="smallText"> *This list is not the full complete listing</p>
                 <div className="toTheLeft">
                 

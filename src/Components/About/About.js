@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Paula from "../../Images/paula.jpg";
+import Nadir from "../../Images/nadir.jpeg";
 import "./About.css";
 class About extends Component {
   render() {
@@ -59,9 +60,13 @@ class About extends Component {
             </p>
           </div>
         </section>
-        <section>
-          <div>
+        <div>
             <h1>Talking Heads & Geniuses </h1>
+          </div>
+        <section>
+         
+        <div>
+            <img className="iconresized" src={Nadir} />
           </div>
           {/* <div> */}
           <div className="rightsidetext2">
