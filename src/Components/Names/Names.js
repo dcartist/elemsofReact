@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 // import {InputText} from 'primereact/inputtext';
 // import { makeStyles } from '@material-ui/core/styles';
+
 import TextField from '@material-ui/core/TextField';
 import CountUp from 'react-countup';
 import NameButton from '../NameButtons/NameButton'
 import NameButtonDis from '../NameButtons/NameButtonDisabled'
-import names from '../../data/compNames.json'
+import names from '../../data/results.json'
+// import names from '../../data/compNames.json'
 import './names.css'
 import { Link} from "../../../node_modules/react-router-dom";
 

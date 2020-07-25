@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
-import names from '../../data/compNames.json'
+// import names from '../../data/compNames.json'
+import names from '../../data/results.json'
 import './Language.css'
+import parse from 'html-react-parser';
 
 class Language extends Component {
     constructor(props){
@@ -20,13 +22,16 @@ class Language extends Component {
       }
     render() {
         // let information = names[this.props.match.params.language]
+
+        // {information[0].summary.replace("\n", "\n\n")}
         let information = names.filter(item => item.id == this.props.match.params.language)
         console.log(information[0].summary.replace("\n", "\n\n"))
         return (    
             <div>
     <h1>{information[0].name}</h1>
    <article>
-   {information[0].summary.replace("\n", "\n\n")}
+       {parse(information[0].summary)}
+  
    </article>
    
             <Link to="/"><button> GoTo = home</button></Link>
