@@ -2,4 +2,15 @@
     background-color: black;
     margin: 0;
     padding: 0; 
+    min-height:80vh;
+    height: 99vh;
+    /* display: flex; */
+}
+
+input{
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 20px;
+    border-bottom: 2px solid white;
 }
