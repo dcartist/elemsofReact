@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import New2020 from "../2020/Index"
 // import Name from '../Names/Names'
 import About from '../About/About.js'
@@ -15,8 +15,8 @@ import {Route, Switch} from "react-router-dom";
 import Home from '../Home/Home'
 
 class App extends Component {
-constructor(props){
-  super(props)
+constructor(){
+  super()
   this.state = {
     language: null
   };
@@ -28,7 +28,7 @@ constructor(props){
 }
   render(){
     return (
-      <div>
+      <div className="App">
         {/* <NavBar></NavBar> */}
        {/* <Link to="/about">about</Link> */}
        {/* <Home></Home> */}
