@@ -1,3 +1,29 @@
+
+.homeDisplay{
+    color:white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.aboutDisplay{
+    color:white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 70vh;
+    text-align: left;
+    width: 50%;
+    padding-top: 25px;
+}
+
 .elementBase{
     /* background-color: black; */
     margin: 0;
@@ -8,7 +34,7 @@
 }
 
 input{
-    background-color: black;
+    background-color: #1A1C1D;
     color: white;
     width: 30rem;
     text-align: center;
@@ -21,9 +47,11 @@ input:focus {
 }
 
 .displayedNames{
+    padding: 25px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 15px;
+    row-gap: 25px;
+    column-gap: 5px;
 }
 .programNameDisplay{
     color:white;
@@ -57,4 +85,3 @@ input:focus {
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
   }
-

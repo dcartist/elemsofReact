@@ -9,7 +9,7 @@ function ModalDisplay(props) {
     onClose={() => setOpen(false)}
     onOpen={() => setOpen(true)}
     open={open}
-trigger={<Button>{props.name}</Button>}
+trigger={<Button color="black" inverted>{props.name}</Button>}
   >
     <Modal.Header>Select a Photo</Modal.Header>
     <Modal.Content>
