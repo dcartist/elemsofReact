@@ -8,13 +8,13 @@ Language, by definition, is the method of human communication, either spoken or 
 
 ### Technologies used:
 
-- ***React JS*** (*FrontEnd*)
+- ***React JS*** *(FrontEnd)*
 
-- **Javascipt** (*FrontEnd*)
+- **Javascipt** *(FrontEnd)*
 
-- ***CSS*** (*FrontEnd*)
+- ***CSS*** *(FrontEnd)*
 
-- **Semantic React UI** (*FrontEnd*)
+- **Semantic React UI** *(FrontEnd)*
 
 - **Flask API** *(Python Backend)*
 
