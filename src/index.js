@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Router>
-      <App />
+      <App className="base"/>
     </Router>,
     document.getElementById("root")
   );

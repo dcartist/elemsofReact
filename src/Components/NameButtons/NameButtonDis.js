@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import '../Names/names.css'
 class NameButtonDis extends Component {
     constructor(props){
-        super(props)
+        super()
         this.state = {
             language: "",
             info: "",

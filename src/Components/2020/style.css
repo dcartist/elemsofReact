@@ -1,5 +1,95 @@
+
+.homeDisplay{
+    color:white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.aboutDisplay{
+    color:white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 70vh;
+    text-align: left;
+    width: 50%;
+    padding-top: 25px;
+}
+
 .elementBase{
-    background-color: black;
+    /* background-color: black; */
     margin: 0;
     padding: 0; 
+    height: 100%;
+    color: white;
+    /* display: flex; */
 }
+.elementBase div{
+    /* background-color: black; */
+    margin: 0;
+    padding: 10px; 
+    height: 100%;
+    color: white;
+    /* display: flex; */
+}
+
+input{
+    background-color: #1A1C1D;
+    color: white;
+    width: 30rem;
+    text-align: center;
+    border: 0;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+input:focus {
+    outline:none;
+}
+
+.displayedNames{
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    column-gap: 5px;
+}
+.programNameDisplay{
+    color:white;
+}
+
+.buttonSpace{
+    padding: 35px;
+    text-align: center;
+    
+}
+.buttonSpaceOnOr{
+    padding:10px;
+}
+
+.buttonGroupSpace{
+    margin-top: 5px;
+}
+
+
+/* color input placeholder */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
