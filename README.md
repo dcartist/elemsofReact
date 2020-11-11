@@ -2,7 +2,7 @@
 
 Language, by definition, is the method of human communication, either spoken or written, consisting of words in a structured and conventional way. There is beauty in the fact that humans have more than 600 forms of communicating with machines.  The frontend is REACT JS driven with Semantic React UI. 
 
-[^*1.]: *The dataset is still being working on and adjusted.
+`*The dataset is still being working on and adjusted.`
 
 
 
