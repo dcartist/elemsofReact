@@ -9,12 +9,13 @@ function ModalDisplay(props) {
     onClose={() => setOpen(false)}
     onOpen={() => setOpen(true)}
     open={open}
+    size={"fullscreen"}
 trigger={<Button color="black" inverted>{props.name}</Button>}
   >
-    <Modal.Header>Select a Photo</Modal.Header>
-    <Modal.Content>
-      <Modal.Description>
-        <Header>{props.name}</Header>
+    <Modal.Header>{props.name}</Modal.Header>
+    <Modal.Content scrolling>
+      <Modal.Description scrolling>
+        {/* <Header>{props.name}</Header> */}
         {parse(String(props.summary_html))}
       </Modal.Description>
     </Modal.Content>
