@@ -11,7 +11,7 @@ class About extends Component {
 
                 <h1>Who?</h1>
                 <p>Paula Bannerman (@Dcartist). An artistic software engineer born and raised in the Washington DC area. Her artistic background includes iPad and tablet drawing, photography, video, painting, graphite, charcoal/pastel, computer-generated 2d/3d, and silversmith/jewelry. As well, her programming language background consists of Turbo Pascal, Qbasic, HTML, CSS, Javascript, Python, and SQL. Currently, she works as an instructor associate at General Assembly, graphic designer, and advocate for the arts in the STEM (STEAM).</p>
-                <p>Nadir Abdulhaqq. Hailing from California, Nadir is a multi-talented computer science genius with more than 20 years of experience in the technology field. Filled with amazingness and knowledge, Nadir provides substantial information from computer languages, technology to the people themselves.</p>
+                {/* <p>Nadir Abdulhaqq. Hailing from California, Nadir is a multi-talented computer science genius with more than 20 years of experience in the technology field. Filled with amazingness and knowledge, Nadir provides substantial information from computer languages, technology to the people themselves.</p> */}
             </div>
         );
     }
